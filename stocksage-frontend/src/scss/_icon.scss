@@ -1,0 +1,9 @@
+.icon{
+    font-size: 14px;
+    &--up{
+        color: $primary;
+    }
+    &--down{
+        color: $red;
+    }
+}

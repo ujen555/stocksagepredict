@@ -1,0 +1,49 @@
+.PredictionSlice {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  &__title {
+    color: $white;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    .icon {
+      background-color: $white;
+      border-radius: 12px;
+      font-size: 22px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      color: $black;
+    }
+    &__value{
+    color: $primary;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+    }
+  }
+  &__value{
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.greenflag{
+ color: $light-green !important ;
+}
+
+.redFlag{
+  color: $red !important;
+}

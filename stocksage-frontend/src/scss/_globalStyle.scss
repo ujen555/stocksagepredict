@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Rubik', sans-serif;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+// varriables
+$primary:#FBC404;
+$light-green:#c3f53c;
+$black:#1E2329;
+$light-black:#293038;
+$lightest-black:#EEEFF3;
+$white:#fff;
+$light-white:#F9FAFC;
+$red:#FF4D4F;
+// mixins
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+@mixin marqueeAnimation($duration: 60s) {
+    @keyframes marquee {
+		0% {
+		  transform: translateX(100vw);
+		}
+		100% {
+		  transform: translateX(-100%);
+		}
+	  }
+    animation: marquee $duration linear infinite;
+}
+
+
+
+main{
+	background-color: $black	;
+	padding: 30px;
+	min-height: 100vh;
+}
+
+.box{
+	background-color: $light-black;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.componentHeader{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+
+.componentTitle{
+	font-size: 20px;
+	color: $primary;
+	font-weight: 600;
+}
+
+
+.mb-5{
+	margin-bottom: 25px;
+}
+
+.cBtn{
+	background-color: transparent;
+	color: $primary !important;
+	border: 1px solid $primary;
+	padding: 4px 8px;
+	border-radius: 20px;
+	line-height: 40px;
+    margin-right: 1rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+	width: fit-content;
+	&:hover{
+		background-color: rgba($primary,0.7);
+		color: $white !important;
+	}
+	cursor: pointer;
+	&--large{
+		padding: 4px 25px;
+	}
+}
+
+.authForm{
+	max-width: 380px;
+	margin: 0 auto;
+	padding: 45px 35px;
+	form{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+		input{
+			margin-bottom: 15px;
+		}
+		.cBtn{
+			width: 100%;
+			border-radius: 40px;
+		}
+	}
+	&__logo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		color: $primary;
+		margin-bottom: 52px;
+		&__header{
+			font-size: 38px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			.icon{
+				font-size: 66px;
+			}
+		}
+	}
+
+
+}
+
+.stockSnap__addToFav{
+	border: 1px solid $primary;
+	padding: 8px 15px;
+	color: $primary;
+	width: auto;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	background-color: transparent;
+	&:hover{
+		background-color: $primary;
+		color: $white;
+	}
+	&:disabled{
+		opacity: 0.5;
+		&:hover{
+			background-color: unset;
+			color: $primary;
+			cursor:not-allowed;
+		}
+	}
+}
+
+.stockSnap__header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0px;
+	margin-bottom: 10px;
+}
+
+.mb-5{
+	margin-bottom: 25px;
+}	
+
+.pleaseLogin{
+	color: $light-green !important;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	font-size: 18px;
+	line-height: 120%;
+	.icon{
+		font-size: 38px;
+		margin: 0 auto;
+		border: 2px solid $light-green;
+		padding: 10px;
+		border-radius: 100%;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+		&:hover{
+			background-color: $light-green;
+			color: $white;
+		}
+	}
+}
+
+.predictionGrid{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 25px;
+	@media(max-width:768px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0px;
+	}
+}
+
+.crudBox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	&:hover{
+		background-color: #293038  !important;
+	}
+	.icon{
+		font-size: 18px;
+		padding: 6px;
+		border: 1px solid $red;
+		color: $red;
+		border-radius: 100%;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			background-color: $red;
+			color: $white;
+
+		}
+	}
+}
+
+.line{
+	border: 1px solid $light-green;
+	padding: 8px 10px;
+	color: $light-green;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: $primary;
+		border-color: $primary;
+	}
+}
+
+.griddyfav{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+	@media(max-width:768px){
+		display: flex;
+		flex-direction: column;
+
+	}
+}
+
+.overflow{
+	max-height: 500px;
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		width: 7px;
+	  }
+	  
+	  
+	   
+	  /* Handle */
+	  &::-webkit-scrollbar-thumb {
+		background:rgba($primary,0.6); 
+		border-radius: 10px;
+		&:hover{
+			background-color: $primary;
+		}
+	  }
+	  
+}
+
+.stock-row{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 20px;
+}
+
+.simps{
+	height: 100%;
+	>div{
+		height: 100% !important;
+		width: 100% !important ;
+	}
+}

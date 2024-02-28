@@ -1,0 +1,38 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 12px 0px;
+}
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.marquee__wrapper {
+  width: max-content;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  animation: marquee 14s linear infinite;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.marquee__item {
+  float: left;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  border-left: 1px solid #eee;
+}
+.marquee:hover .marquee__wrapper {
+  animation-play-state: paused;
+}

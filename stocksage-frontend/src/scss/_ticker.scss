@@ -1,0 +1,49 @@
+
+.marquee {
+    width: 100%;
+    position: relative;
+    padding: 12px 0px;
+    box-shadow: rgba($light-black, 0.16) 0px 1px 4px;
+    overflow: hidden;
+    &__wrapper {
+        width: max-content;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        @include flexCenter;
+        @include marqueeAnimation;
+        gap: 15px;
+    }
+   
+    &__item {
+        width: max-content;
+        @include flexCenter;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        color: $black;
+        justify-content: center;
+        border-left: 2px solid $light-black;
+        padding-left: 15px;
+        font-size: 14px;
+        gap: 6px;
+        &__changeAmount{
+            @include flexCenter;
+            gap: 4px;
+            &--up{
+                color: $primary;
+            }
+            &--down{
+                color: $red;
+            }
+        }
+        &__totalQuantity{
+            color: $light-black;
+        }
+    }
+
+    &:hover {
+        .marquee__wrapper {
+            animation-play-state: paused;
+        }
+    }
+}

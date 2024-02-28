@@ -1,0 +1,16 @@
+.predictedStockList{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &__item{
+        padding: 15px 20px ;
+        color:$white;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: $white;
+            color: $black;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.stockSearch{
+    padding: 30px;
+    height: 170px;
+    position: relative;
+    overflow: visible;
+    background-color: $white;
+    border-bottom: 1px solid  $lightest-black;
+    &__title{
+        font-size: 32px;
+        font-weight: 500;
+        color: $black   ;
+        text-align: center;
+
+        @media(width<=767px){
+            font-size: 28px;
+        }
+        span{
+            color: $primary
+        }
+    }
+
+ 
+    @include flexCenter;
+    .content{
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        @include flexCenter;
+        flex-direction: column;
+        gap:35px;
+    }
+    .bg-image{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: auto;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+        transform: scaleY(-1);
+    }
+}
+
+
