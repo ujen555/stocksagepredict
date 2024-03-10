@@ -340,20 +340,9 @@ main {
 }
 
 .MarketInformation__table {
-  overflow-x: auto;
-  width: 100%;
-}
-
-.stockSnap {
-  width: auto;
-}
-
-.flex-tb {
-  width: -webkit-fill-available;
-}
-
-.stockSnap.stockSnap--mp {
-  width: 100%;
+  overflow: auto;
+  min-width: 430px;
+  background-color: red;
 }
 
 .icon {
@@ -955,10 +944,4 @@ p {
 
 .redFlag {
   color: #FF4D4F !important;
-}
-
-.PredictionSlice {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
 }

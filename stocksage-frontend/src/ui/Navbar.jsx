@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu  } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { AiOutlineStock } from "react-icons/ai";
@@ -33,6 +33,11 @@ function NavBar() {
     showToast("Logout Successful");
     navigate(`/home`);
   } ;
+
+  const gotonewLink = () => {
+    // Navigate to the relative URL within your application
+    window.location.href = 'C:\yujenProjects\stocksagepredict\stocksage-frontend\src\redirect\mock.html';
+  }
   return (
     <>
       <nav className="navbar">
@@ -63,11 +68,11 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/heatmap"
+                to="/marketInfo"
                   className="nav-links"
                 onClick={handleClick}
               >
-                Heat Map
+                Market Information
               </NavLink>
             </li>
             <li className="">

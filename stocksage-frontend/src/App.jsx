@@ -14,6 +14,7 @@ import Company from "./pages/Company";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/LogIn";
 import Heatmap from "./pages/HeatMap";
+import MarketInformation from "./pages/MarketInformation";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/prediction",
         element: <Prediction></Prediction>,
+      },
+      {
+        path: "/marketInfo",
+        element: <MarketInformation></MarketInformation>,
       },
       {
         path: "/heatmap",

@@ -1,0 +1,132 @@
+[
+    {
+        "Sub Index": "Banking SubIndex",
+        "Open": "1,072.90",
+        "High": "1,079.31",
+        "Low": "1,063.87",
+        "Close": "1,072.86",
+        "Point": "2.17",
+        "% Change": "0.20",
+        "Turnover": "195,984,614.20"
+    },
+    {
+        "Sub Index": "Development Bank Index",
+        "Open": "3,899.59",
+        "High": "3,931.98",
+        "Low": "3,880.91",
+        "Close": "3,921.03",
+        "Point": "21.44",
+        "% Change": "0.54",
+        "Turnover": "68,558,353.80"
+    },
+    {
+        "Sub Index": "Finance Index",
+        "Open": "1,828.12",
+        "High": "1,838.57",
+        "Low": "1,801.80",
+        "Close": "1,823.62",
+        "Point": "-4.59",
+        "% Change": "-0.25",
+        "Turnover": "134,850,391.60"
+    },
+    {
+        "Sub Index": "Hotels And Tourism",
+        "Open": "5,059.32",
+        "High": "5,133.08",
+        "Low": "5,038.52",
+        "Close": "5,133.08",
+        "Point": "73.76",
+        "% Change": "1.45",
+        "Turnover": "31,919,649.50"
+    },
+    {
+        "Sub Index": "HydroPower Index",
+        "Open": "2,502.31",
+        "High": "2,546.88",
+        "Low": "2,494.24",
+        "Close": "2,535.45",
+        "Point": "34.15",
+        "% Change": "1.36",
+        "Turnover": "717,160,449.60"
+    },
+    {
+        "Sub Index": "Investment",
+        "Open": "74.58",
+        "High": "75.39",
+        "Low": "74.29",
+        "Close": "75.16",
+        "Point": "0.72",
+        "% Change": "0.96",
+        "Turnover": "101,560,945.40"
+    },
+    {
+        "Sub Index": "Life Insurance",
+        "Open": "10,032.31",
+        "High": "10,105.30",
+        "Low": "9,936.27",
+        "Close": "10,051.62",
+        "Point": "31.73",
+        "% Change": "0.31",
+        "Turnover": "166,222,783.70"
+    },
+    {
+        "Sub Index": "Manufacturing And Processing",
+        "Open": "6,025.22",
+        "High": "6,199.61",
+        "Low": "6,003.49",
+        "Close": "6,176.85",
+        "Point": "151.63",
+        "% Change": "2.51",
+        "Turnover": "227,383,345.00"
+    },
+    {
+        "Sub Index": "Microfinance Index",
+        "Open": "3,528.80",
+        "High": "3,536.35",
+        "Low": "3,495.42",
+        "Close": "3,526.97",
+        "Point": "-2.12",
+        "% Change": "-0.06",
+        "Turnover": "77,265,165.70"
+    },
+    {
+        "Sub Index": "Mutual Fund",
+        "Open": "17.97",
+        "High": "17.97",
+        "Low": "17.86",
+        "Close": "17.94",
+        "Point": "-0.03",
+        "% Change": "-0.21",
+        "Turnover": "4,300,767.58"
+    },
+    {
+        "Sub Index": "Non Life Insurance",
+        "Open": "10,311.00",
+        "High": "10,359.35",
+        "Low": "10,214.57",
+        "Close": "10,319.80",
+        "Point": "23.19",
+        "% Change": "0.22",
+        "Turnover": "83,160,630.80"
+    },
+    {
+        "Sub Index": "Others Index",
+        "Open": "1,684.56",
+        "High": "1,703.03",
+        "Low": "1,678.32",
+        "Close": "1,697.32",
+        "Point": "12.76",
+        "% Change": "0.75",
+        "Turnover": "169,120,180.70"
+    },
+    {
+        "Sub Index": "Trading Index",
+        "Open": "2,664.13",
+        "High": "2,708.68",
+        "Low": "2,645.01",
+        "Close": "2,699.84",
+        "Point": "35.71",
+        "% Change": "1.34",
+        "Turnover": "13,967,931.20"
+    }
+]

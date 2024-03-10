@@ -326,3 +326,85 @@ main{
 		width: 100% !important ;
 	}
 }
+
+.marketInfoTitle{
+	font-size: 16px;
+	color: #c3f53c;
+	margin-bottom: 10px;
+	&__table{
+		width: 100%;
+		table{
+			width: 100%;
+
+		}
+	}
+}
+
+.MarketInformation__table{
+	table{
+		width:auto;
+		border: 1px solid #444859;
+		tr{
+			&:nth-child(odd){
+				td{
+					background-color: #353E47;
+					color: #fff;
+					&:hover{
+						background-color: #353e47 ; 
+						color: #fff;
+					}
+				}
+				
+			
+			}
+			&:nth-child(1){
+				td{
+					background-color: $primary;
+					color: #fff;
+				}
+			}
+			td{
+				border-bottom: 1px solid #444859;
+				background: "#293038";
+				transition: all 0.3s ease-in-out;
+				color: #fff;
+				padding: 10px 10px;
+				font-size: 16px;
+			
+				&:hover{
+					background-color: #353e47 ; 
+				}
+			}
+		}
+	}
+}
+
+.flex-tb{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 25px;
+	align-items: flex-start;
+}
+
+
+.MarketInformation__table {
+    overflow-x: auto;
+
+    width: 100%;
+
+}
+
+.stockSnap {
+  
+    width: auto;
+}
+
+
+.flex-tb {
+    width: -webkit-fill-available;
+}
+
+.stockSnap.stockSnap--mp{
+	width: 100%;
+}

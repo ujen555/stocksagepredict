@@ -8,8 +8,28 @@
     <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/stocktools/gui.css">
 <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/annotations/popup.css">
     <title>StockSage</title>
+    <style>
+      .technicalIndicator{
+        background-color: #fff;
+        color: #FBC404;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      .technicalIndicator a{
+        background-color: #fff;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 8px 15px;
+        background-color: #FBC404;
+      }
+    </style>
   </head>
   <body>
+    <div class="technicalIndicator">
+      <a href="./src/redirect/mock.html">technical Indicator</a>
+    </div>
     <div id="root"></div>
 
     <script type="module" src="/src/main.jsx"></script>
