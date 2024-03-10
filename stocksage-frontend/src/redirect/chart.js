@@ -40,7 +40,7 @@ async function processDataAndCreateChart() {
             height: 600
         },
         title: {
-            text: 'AAPL Historical'
+            text: `${selectedOption.split(".")[0].toUpperCase()} Historical`
         },
         subtitle: {
             text: 'All indicators'
@@ -79,8 +79,8 @@ async function processDataAndCreateChart() {
         },
         series: [{
             type: 'candlestick',
-            id: 'aapl',
-            name: 'AAPL',
+            id: `${selectedOption.split(".")[0]}`,
+            name: `${selectedOption.split(".")[0].toUpperCase()}`,
             data: ohlc // Changed data to ohlc
         }, {
             type: 'column',
@@ -91,12 +91,12 @@ async function processDataAndCreateChart() {
         }, {
             type: 'pc',
             id: 'overlay',
-            linkedTo: 'aapl',
+            linkedTo: `${selectedOption.split(".")[0]}`,
             yAxis: 0
         }, {
             type: 'macd',
             id: 'oscillator',
-            linkedTo: 'aapl',
+            linkedTo: `${selectedOption.split(".")[0]}`,
             yAxis: 2
         }]
     }, function (chart) {
@@ -107,7 +107,7 @@ async function processDataAndCreateChart() {
                 series.remove(false);
                 chart.addSeries({
                     type: e.target.value,
-                    linkedTo: 'aapl',
+                    linkedTo:`${selectedOption.split(".")[0]}`,
                     id: 'overlay'
                 });
             }
@@ -120,7 +120,7 @@ async function processDataAndCreateChart() {
                 series.remove(false);
                 chart.addSeries({
                     type: e.target.value,
-                    linkedTo: 'aapl',
+                    linkedTo:`${selectedOption.split(".")[0]}`,
                     id: 'oscillator',
                     yAxis: 2
                 });
