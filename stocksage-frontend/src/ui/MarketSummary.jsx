@@ -9,7 +9,7 @@ function MarketSummary() {
     <h3 class="componentTitle mb-5">Market Summary</h3>
     <div className="marketInfoTitle">
         As On
-
+        3/10/2024
     </div>
     <div className="MarketInformation__table">
         <table>

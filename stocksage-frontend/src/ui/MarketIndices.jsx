@@ -9,7 +9,6 @@ function MarketIndices() {
   return (
     <div class="stockSnap stockSnap--mp">
       <h3 class="componentTitle mb-5">Market Indices</h3>
-      <div className="marketInfoTitle">As On</div>
       <div className="MarketInformation__table">
         <table>
           <thead>
